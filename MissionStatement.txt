@@ -1,0 +1,9 @@
+Mission Statement
+
+Our project aims to develop a lightweight, real-time network traffic analysis tool capable of detecting and 
+alerting on suspicious or potentially malicious behaviors within local and remote environments. Using open-source 
+libraries such as Scapy and Pyshark, we seek to simulate, capture, and analyze network-level vulnerabilities—such 
+as unencrypted credential transmission and ARP spoofing—in order to better understand and demonstrate the 
+importance of secure communications. This project is driven by a commitment to cybersecurity education, 
+responsible experimentation, and the proactive identification of threats in an ethical, controlled, 
+and non-intrusive manner.

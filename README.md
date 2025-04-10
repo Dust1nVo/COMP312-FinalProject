@@ -1,10 +1,5 @@
 # COMP312-FinalProject
 
-# Real-Time Network Vulnerability Analyzer
-
-## Overview
-This project is a Python-based tool that captures and analyzes live network traffic to detect potential security vulnerabilities in real time. Built entirely using **Scapy**, the tool parses packet-level details such as IP addresses, ports, protocols, and payloads to simulate and identify common threats in local networks.
-
 The purpose of this tool is to demonstrate how attackers might exploit insecure network behaviors and raise awareness about best practices in network security.
 
 ## Features
