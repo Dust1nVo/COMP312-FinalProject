@@ -23,11 +23,12 @@ This project is intended for **cybersecurity education and research**. It helps 
 - `logs/` – Directory where alert logs are stored
 - `README.md` – This file
 
+## Authors
+- Team 5: COMP 312 01E
+- Matthew Caballero, Xander Estevez, Dustin Vo
+
 ## Setup & Usage
 ```bash
 pip install scapy
 sudo python main.py
 
-## Authors
-- Team 5: COMP 312 01E
-- Matthew Caballero, Xander Estevez, Dustin Vo
