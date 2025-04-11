@@ -1,6 +1,7 @@
 import os
 import sys
-from scapy.all import sniff, ARP, Raw, IP, TCP
+# from scapy.all import sniff, ARP, Raw, IP, TCP
+from scapy.all import *
 
 # Create logs folder if it doesn't exist
 os.makedirs("logs", exist_ok=True)
@@ -61,6 +62,30 @@ def run_test_mode():
     # Simulate unencrypted HTTP credentials
     fake_http = IP(src="10.0.0.5", dst="10.0.0.1") / TCP(dport=80) / Raw(load="POST /login HTTP/1.1\r\n\r\nusername=test&password=1234")
     packet_handler(fake_http)
+
+    # Scanning a port
+    try:
+        # E.g. 8.8.8.8
+        host = input("Enter a host address: ")
+        # E.g. 53,8080
+        p = list(input("Enter the ports to scan: ").split(","))
+        temp = map(int,p)
+        ports = list(temp)
+
+        if(re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$",host)):
+            print("\n\nScanning...")
+            print("Host: ", host)
+            print("Ports: ",ports)
+
+            ans,unans = sr(IP(dst=host)/TCP(dport=ports,flags="S"),verbose=0, timeout=2)
+
+            for (s,r) in ans:
+                print("[+] {} Open".format(s[TCP].dport))
+
+    except (ValueError, RuntimeError, TypeError, NameError):
+        print("[-] Some Error Occured")
+        print("[-] Exiting..")
+
 
 # --- Main ---
 
