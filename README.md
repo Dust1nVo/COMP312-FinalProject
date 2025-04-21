@@ -14,6 +14,8 @@ This project is intended for **cybersecurity education and research**. It helps 
 
 ## Project Files
 - `main.py` – Core logic for live capture, detection, and logging
+- `dashboard.py` - Contains dashboard interface that displays logs
+- `scriptSimulator.py` - Generates fake ARP Spoofs and invalid HTTP Credentials at random then uploads to dashboard
 - `MissionStatement.txt` – Mission Statement
 - `CodeOfConduct.txt` - Code of Conduct
 - `logs/` – Directory where alert logs are stored
@@ -26,5 +28,8 @@ This project is intended for **cybersecurity education and research**. It helps 
 ## Setup & Usage
 ```bash
 pip install scapy
-sudo python main.py
+pip install flask
+sudo python3 dashboard.py
+sudo python3 scriptSimulator.py
+
 
