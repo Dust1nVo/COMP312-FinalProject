@@ -14,7 +14,8 @@ This project is intended for **cybersecurity education and research**. It helps 
 
 ## Project Files
 - `main.py` – Core logic for live capture, detection, and logging
-- `project_overview.txt` – Mission Statement and Code of Conduct
+- `MissionStatement.txt` – Mission Statement
+- `CodeOfConduct.txt` - Code of Conduct
 - `logs/` – Directory where alert logs are stored
 - `README.md` – This file
 
