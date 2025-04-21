@@ -60,7 +60,7 @@ def run_test_mode():
     packet_handler(fake_arp2)
 
     # Simulate unencrypted HTTP credentials
-    fake_http = IP(src="10.0.0.5", dst="10.0.0.1") / TCP(dport=80) / Raw(load="POST /login HTTP/1.1\r\n\r\nusername=test&password=1234")
+    fake_http = ip(src="10.0.0.5", dst="10.0.0.1") / TCP(dport=80) / Raw(load="POST /login HTTP/1.1\r\n\r\nusername=test&password=1234")
     packet_handler(fake_http)
 
     # Scanning a port

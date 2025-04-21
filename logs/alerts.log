@@ -1,9 +1,13 @@
-[2025-04-10 22:55:54] ARP Spoofing Detected: 192.168.1.1 changed MAC from 11:22:33:44:55:66 to aa:bb:cc:dd:ee:ff
-[2025-04-10 23:02:32] ARP Spoofing Detected: 192.168.1.1 changed MAC from aa:bb:cc:dd:ee:ff to 11:22:33:44:55:66
-[2025-04-10 23:02:35] ARP Spoofing Detected: 192.168.1.1 changed MAC from 11:22:33:44:55:66 to aa:bb:cc:dd:ee:ff
-[2025-04-10 23:02:35] ARP Spoofing Detected: 192.168.1.1 changed MAC from 11:22:33:44:55:66 to aa:bb:cc:dd:ee:ff
-[2025-04-10 23:10:23] ARP Spoofing Detected: 192.168.0.1 changed MAC from aa:bb:cc:dd:ee:ff to 11:22:33:44:55:66
-[2025-04-10 23:10:23] Unencrypted Credential Detected: POST /login HTTP/1.1
-
-username=test&password=1234
-[2025-04-11 14:00:48] ARP Spoofing Detected: 192.168.1.1 changed MAC from 11:22:33:44:55:66 to aa:bb:cc:dd:ee:ff
+[2025-04-21 03:17:03] ARP Spoofing Detected: 10.0.0.5 changed MAC from 00:11:22:33:44:55 to 11:22:33:44:55:66
+[2025-04-21 03:17:08] ARP Spoofing Detected: 10.0.0.5 changed MAC from de:ad:be:ef:00:01 to aa:bb:cc:dd:ee:ff
+[2025-04-21 03:17:13] Unencrypted Credential Detected: POST /login username=admin&password=password
+[2025-04-21 03:17:18] ARP Spoofing Detected: 10.0.0.5 changed MAC from 00:11:22:33:44:55 to de:ad:be:ef:00:01
+[2025-04-21 03:17:23] Unencrypted Credential Detected: POST /login username=test&password=qwerty
+[2025-04-21 03:17:28] Unencrypted Credential Detected: POST /login username=test&password=1234
+[2025-04-21 03:17:33] ARP Spoofing Detected: 172.16.1.1 changed MAC from de:ad:be:ef:00:01 to 00:11:22:33:44:55
+[2025-04-21 03:17:38] Unencrypted Credential Detected: POST /login username=alice&password=hunter2
+[2025-04-21 03:17:43] ARP Spoofing Detected: 192.168.0.10 changed MAC from aa:bb:cc:dd:ee:ff to 00:11:22:33:44:55
+[2025-04-21 03:17:48] Unencrypted Credential Detected: POST /login username=user1&password=hunter2
+[2025-04-21 03:17:53] Unencrypted Credential Detected: POST /login username=test&password=1234
+[2025-04-21 03:17:58] ARP Spoofing Detected: 172.16.1.1 changed MAC from 00:11:22:33:44:55 to de:ad:be:ef:00:01
+[2025-04-21 03:18:03] Unencrypted Credential Detected: POST /login username=user1&password=qwerty

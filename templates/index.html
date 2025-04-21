@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Vulnerability Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #1e1e1e; color: #dcdcdc; padding: 2em; }
+        h1 { color: #00ffaa; }
+        #logs { background: #333; padding: 1em; border-radius: 5px; white-space: pre-line; }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Alert Dashboard</h1>
+    <p id="status">Fetching logs...</p>
+    <div id="logs">Loading...</div>
+
+    <script>
+        async function fetchLogs() {
+            try {
+                const response = await fetch("/logs");
+                const data = await response.json();
+                document.getElementById("logs").textContent = data.join("\n");
+                document.getElementById("status").textContent = "Last updated: " + new Date().toLocaleTimeString();
+            } catch (e) {
+                document.getElementById("status").textContent = "Error fetching logs";
+            }
+        }
+
+        // Fetch every 5 seconds
+        fetchLogs();
+        setInterval(fetchLogs, 5000);
+    </script>
+</body>
+</html>
